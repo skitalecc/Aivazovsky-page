@@ -25,3 +25,7 @@ a{
     max-width: 970px;
     padding: 0 15px;
 }
+
+h1, p{
+    margin: 0;
+}
