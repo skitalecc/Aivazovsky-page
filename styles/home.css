@@ -1,8 +1,8 @@
 .home {
     text-align: center;
+    padding: 0 0 70px 0;
 }
-.container {
-}
+
 
 .home-title {
     color: var(--color-main-black);
