@@ -19,18 +19,28 @@
         <nav class="nav" aria-label="header navigation">
           <ul class="nav-list" aria-label="header navigation list">
             <li>
-              <a href="#" class="nav-link" aria-label="link to home">Home</a>
+              <a href="#home-id" class="nav-link" aria-label="link to home"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="#" class="nav-link" aria-label="link to about">About</a>
+              <a href="#about-id" class="nav-link" aria-label="link to about"
+                >About</a
+              >
             </li>
             <li>
-              <a href="#" class="nav-link" aria-label="link to history"
+              <a
+                href="#history-id"
+                class="nav-link"
+                aria-label="link to history"
                 >History</a
               >
             </li>
             <li>
-              <a href="#" class="nav-link" aria-label="link to Portfolio"
+              <a
+                href="#portfolio-id"
+                class="nav-link"
+                aria-label="link to Portfolio"
                 >Portfolio</a
               >
             </li>
@@ -46,14 +56,14 @@
     <main aria-label="main">
       <section class="home" aria-label="home section">
         <div class="container">
-          <h1 class="home-title" aria-label="title">
+          <h1 class="home-title" aria-label="title" id="home-id">
             Ivan Constantinovich Aivazovsky
           </h1>
           <p class="home-description" aria-label="description">
             Russian marine painter of Armenian origin, collector, philanthropist
           </p>
           <img
-            src="assets/webp/portrait 1.webp"
+            src="assets/webp/portrait1.webp"
             alt="photo of Aivazovsky"
             class="home-image"
           />
@@ -61,7 +71,7 @@
       </section>
       <section class="about">
         <div class="container">
-          <h2 class="about-title" aria-label="">About</h2>
+          <h2 class="about-title" aria-label="" id="about-id">About</h2>
           <h3 class="about-subtitle-ru" aria-label="about-subtitle-ru">
             Ива́н Константи́нович Айвазо́вский – русский живописец-маринист
             армянского происхождения, коллекционер, меценат.
@@ -73,7 +83,7 @@
             составляют больше половины его работ. Художник считается одним из
             величайших маринистов всех времён.
           </p>
-          <hr class="separete" aria-label="separete">
+          <hr class="separete" aria-label="separete" />
           <h3 class="about-subtitle-en" aria-label="about-subtitle-en">
             Ivan Konstantinovich Aivazovsky - Russian marine painter of Armenian
             origin, collector, philanthropist.
@@ -87,7 +97,108 @@
           </p>
         </div>
       </section>
+      <section class="history-section">
+        <div class="container" aria-label="history section">
+          <h2 class="history-title" aria-label="History image" id="history-id">
+            History
+          </h2>
+          <img
+            src="/assets/webp/history1.webp"
+            alt="history-photo"
+            class="history-photo"
+          />
+          <p class="history-description" aria-label="history-description">
+            Дом в котором родился Айвазовский | The house where Aivazovsky was
+            born
+          </p>
+        </div>
+      </section>
+
+      <section class="portfolio-section">
+        <div class="container">
+          <h2 class="portfolio-title" id="portfolio-id">Portfolio</h2>
+          <img
+            src="/assets/webp/partfolio1.webp"
+            alt="Winter wagon train on the way"
+            class="portfolio-picture"
+          />
+          <p class="portfolio-description" aria-label="portfolio description">
+            Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857
+          </p>
+
+          <img
+            src="/assets/webp/partfolio2.webp"
+            alt="Радуга, 1873 г. | Rainbow, 1873"
+            class="portfolio-picture"
+          />
+          <p class="portfolio-description" aria-label="portfolio description">
+            Радуга, 1873 г. | Rainbow, 1873
+          </p>
+          <img
+            src="/assets/webp/partfolio3.webp"
+            alt="Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893"
+            class="portfolio-picture"
+          />
+          <p class="portfolio-description" aria-label="portfolio description">
+            Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning,
+            1893
+          </p>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer class="contacts" aria-label="contacts section" id="contacts-id">
+      <div class="container">
+        <h2 class="contacts-title">Contacts</h2>
+        <button class="contacts-button">
+          <a href="https://ayvazovskiy.su" class="button-link" target="_blank"
+            >ayvazovskiy.su</a
+          >
+        </button>
+
+        <address class="socials" aria-label="social icons">
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            aria-label="link to youtube"
+          >
+            <svg class="social-icon" aria-label="youtube icon">
+              <use href="assets/sprites.svg#youtube-icon"></use>
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            aria-label="link to linkedin"
+          >
+            <svg class="social-icon" aria-label="linkedin icon">
+              <use href="assets/sprites.svg#linkedin-icon"></use>
+            </svg>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="link to instagram"
+          >
+            <svg class="social-icon" aria-label="instagram icon">
+              <use href="assets/sprites.svg#instagram-icon"></use>
+            </svg>
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            aria-label="link to facebook"
+          >
+            <svg class="social-icon" aria-label="facebook icon">
+              <use href="assets/sprites.svg#facebook-icon"></use>
+            </svg>
+          </a>
+        </address>
+
+        <p class="contacts-info" aria-label="just for notice">
+          More works you can see in these social networks
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
